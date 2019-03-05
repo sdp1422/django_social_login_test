@@ -1,9 +1,9 @@
 from django.contrib import admin
 from .models import Blog
-from .models import Pictures # 미디어 파일 등록 위해 import
+from .models import Pictures # for media file import
 
 # Register your models here.
 admin.site.register(Blog)
 
-# 미디어 파일 등록 위해
+# for media file
 admin.site.register(Pictures)

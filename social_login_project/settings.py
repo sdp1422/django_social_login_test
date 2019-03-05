@@ -133,7 +133,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'   # 미디어 파일 추가하기 위해
-MEDIA_ROOT = os.path.join(BASE_DIR, 'social_login_app', 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # 추가
 AUTHENTICATION_BACKENDS = (
