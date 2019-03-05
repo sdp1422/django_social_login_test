@@ -17,8 +17,15 @@ from django.contrib import admin
 from django.urls import path, include # include 추가함
 from social_login_app import views
 
+# media 파일 추가하기 위해 import
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
     path('accounts/', include('allauth.urls')), # url 추가
 ]
+
+# 미디어 파일 추가해주기 위해 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -32,6 +32,23 @@
 
     <br><br>
 
+    <!-- 미디어 파일  -->
+    {% for blog in blog.all %}
+
+    <img src="{{blog.image.url}}" width=500>
+    <br>
+    {{blog.text}}
+
+    <br><br>
+
+    <img src="{{blog.image_thumbnail.url}}" alt="">
+
+    {% endfor %}
+
+    <hr>
+    
+    <br>
+
     <div id="map" style="width:50%;height:400px;"></div>
 
     <br><br>

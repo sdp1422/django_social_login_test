@@ -47,6 +47,9 @@ INSTALLED_APPS = [
 
     # provider 구글 페이스북 카톡 깃헙 등 소셜 로그인 기능을 제공해주는 업체
     'allauth.socialaccount.providers.google', # 구글의 경우
+
+    # 이미지 키트 등록
+    'imagekit',
 ]
 
 MIDDLEWARE = [
@@ -128,6 +131,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'   # 미디어 파일 추가하기 위해
+MEDIA_ROOT = os.path.join(BASE_DIR, 'social_login_app', 'media')
 
 # 추가
 AUTHENTICATION_BACKENDS = (
