@@ -31,7 +31,7 @@
     {% endif %}
 
     <br><br>
-    
+
     <div id="map" style="width:50%;height:400px;"></div>
 
     <br><br>
@@ -40,25 +40,29 @@
 
     <br><br>
 
+    <div id="map3" style="width:50%;height:400px;"></div>
+
+    <br><br>
+
     <script>
-        // var mapOptions = {
-        //     center: new naver.maps.LatLng(37.3595704, 127.105399),
-        //     zoom: 12
-        // };
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            zoom: 12
+        };
 
-        // var mapOptions2 = {
-        //     // 교통대 좌표
-        //     center: new naver.maps.LatLng(36.9697366, 127.8713231),
-        //     zoom: 13
-        // };
+        var mapOptions2 = {
+            // 교통대 좌표
+            center: new naver.maps.LatLng(36.9697366, 127.8713231),
+            zoom: 13
+        };
 
-        // var map = new naver.maps.Map('map', mapOptions);
+        var map = new naver.maps.Map('map', mapOptions);
 
-        // var map2 = new naver.maps.Map('map2', mapOptions2);
+        var map2 = new naver.maps.Map('map2', mapOptions2);
 
         var HOME_PATH = window.HOME_PATH || '.';
         var cityhall = new naver.maps.LatLng(37.5666805, 126.9784147),
-            map = new naver.maps.Map('map', {
+            map = new naver.maps.Map('map3', {
                 center: cityhall,
                 zoom: 10
             }),
